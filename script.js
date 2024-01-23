@@ -55,7 +55,6 @@ function playerWon (value1, value2) {
 function winner (value, pc){
     const agpc = document.querySelector('#agpc');
     const resultStatus = document.querySelector('#result_status');
-    const resetButton = document.querySelector('#reset_button');
     const youwin = document.querySelector('#you_win');
     const pcwin = document.querySelector('#pc_win');
     const playerScore = document.querySelector('#player_score');
@@ -104,8 +103,6 @@ function winner (value, pc){
 
 function winnerReset (){
     const agpc = document.querySelector('#agpc');
-    // const resultStatus = document.querySelector('#result_status');
-    // const resetButton = document.querySelector('#reset_button');
     const youwin = document.querySelector('#you_win');
     const pcwin = document.querySelector('#pc_win');
     agpc.style.display = 'block';
