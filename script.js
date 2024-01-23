@@ -79,6 +79,9 @@ function winner (value, pc){
             playerWonBool = true;
             youwin.style.display = 'flex';
             pcwin.style.display = 'none';
+            const newCount = Number(playerWinCountt)+1;
+            localStorage.setItem("player", `${newCount}`);
+            playerScore.innerHTML = `${newCount}`;
             if(playerWonBool){
                 win.style.display = 'flex';
                 header.style.display = 'none';
@@ -86,9 +89,6 @@ function winner (value, pc){
                 next.style.display = 'none';
             } else{
                 resultStatus.innerHTML = "YOU WON";
-                const newCount = Number(playerWinCountt)+1;
-                localStorage.setItem("player", `${newCount}`);
-                playerScore.innerHTML = `${newCount}`;
             }
         }
         else{
